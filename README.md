@@ -13,7 +13,7 @@
 
 <br/>
 
-**48 Test Cases** · **5 Browsers** · **Multi-Environment** · **API-Assisted** · **Jenkins Parameterized**
+**48 Test Cases** · **4 Browsers** · **Multi-Environment** · **API-Assisted** · **Jenkins Parameterized**
 
 <br/>
 
