@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","28600","@gen Filter functionality","firefox","Fri Apr 03 13:38:01 IST 2026","passed","Fri Apr 03 13:38:29 IST 2026","","filter.spec.ts","",""
+"","37390","@gen Coursel arrows check","firefox","Fri Apr 03 13:37:20 IST 2026","passed","Fri Apr 03 13:37:57 IST 2026","","Courselarrows.spec.ts","",""
+"","38297","@gen Forgot Password functionality","firefox","Fri Apr 03 13:40:12 IST 2026","failed","Fri Apr 03 13:40:50 IST 2026","","forgotpassword.spec.ts","",""

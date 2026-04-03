@@ -1,0 +1,1 @@
+[{"name":"Product Defects","messageRegex":".*AssertionError.*","matchedStatuses":["failed"]},{"name":"Test Defects","messageRegex":".*TimeoutError.*","matchedStatuses":["broken"]},{"name":"Ignored Tests","matchedStatuses":["skipped"]}]

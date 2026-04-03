@@ -1,0 +1,1 @@
+[{"values":["local"],"name":"ENV"},{"values":["http://localhost:8081/"],"name":"BASE_URL"},{"values":["parallel"],"name":"MODE"},{"values":["true"],"name":"HEADLESS"},{"values":["false"],"name":"INCOGNITO"}]

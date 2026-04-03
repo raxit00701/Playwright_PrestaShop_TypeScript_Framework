@@ -1,0 +1,152 @@
+# Page snapshot
+
+```yaml
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - generic:
+          - link "Contact us" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:8081/contact-us
+          - generic [ref=e11]:
+            - generic [ref=e13]:
+              - text: "Currency:"
+              - button "Currency dropdown" [ref=e14]:
+                - text: EUR €
+                - generic [ref=e15] [cursor=pointer]: 
+            - link " Sign in" [ref=e18] [cursor=pointer]:
+              - /url: http://localhost:8081/login?back=http%3A%2F%2Flocalhost%3A8081%2Fpassword-recovery
+              - generic [ref=e19]: 
+              - text: Sign in
+            - generic [ref=e22]:
+              - generic [ref=e23]: shopping_cart
+              - text: Cart (0)
+    - generic [ref=e26]:
+      - link "PrestaShop" [ref=e28] [cursor=pointer]:
+        - /url: http://localhost:8081/
+        - img "PrestaShop" [ref=e29]
+      - generic [ref=e30]:
+        - list [ref=e32]:
+          - listitem [ref=e33]:
+            - link "Clothes" [ref=e34] [cursor=pointer]:
+              - /url: http://localhost:8081/3-clothes
+          - listitem [ref=e35]:
+            - link "Accessories" [ref=e36] [cursor=pointer]:
+              - /url: http://localhost:8081/6-accessories
+          - listitem [ref=e37]:
+            - link "Art" [ref=e38] [cursor=pointer]:
+              - /url: http://localhost:8081/9-art
+        - generic [ref=e40]:
+          - generic [ref=e41]: search
+          - status [ref=e42]
+          - textbox "Search" [ref=e43]:
+            - /placeholder: Search our catalog
+  - generic [ref=e45]:
+    - navigation [ref=e46]:
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - link "Home" [ref=e49] [cursor=pointer]:
+            - /url: http://localhost:8081/
+          - text: /
+        - listitem [ref=e50]: Reset your password
+    - generic [ref=e53]:
+      - heading "Forgot your password?" [level=1] [ref=e55]
+      - generic [ref=e57]:
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - img [ref=e61]
+            - paragraph [ref=e63]: An error occurred while sending the email.
+        - paragraph [ref=e65]: Please enter the email address you used to register. You will receive a temporary link to reset your password.
+        - generic [ref=e67]:
+          - generic [ref=e68]: Email address
+          - textbox [ref=e70]: user1772806998404@gmail.com
+          - button "Send reset link" [ref=e71] [cursor=pointer]
+      - link " Back to login" [ref=e73] [cursor=pointer]:
+        - /url: http://localhost:8081/my-account
+        - generic [ref=e74]: 
+        - text: Back to login
+  - generic [ref=e75]:
+    - generic [ref=e77]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Get our latest news and special sales
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - button "Subscribe" [ref=e85] [cursor=pointer]
+            - textbox "Get our latest news and special sales" [ref=e87]:
+              - /placeholder: Your email address
+          - paragraph [ref=e89]: You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+      - generic [ref=e90]:
+        - list
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: Products
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - link "Prices drop" [ref=e100] [cursor=pointer]:
+                  - /url: http://localhost:8081/prices-drop
+              - listitem [ref=e101]:
+                - link "New products" [ref=e102] [cursor=pointer]:
+                  - /url: http://localhost:8081/new-products
+              - listitem [ref=e103]:
+                - link "Best sellers" [ref=e104] [cursor=pointer]:
+                  - /url: http://localhost:8081/best-sellers
+          - generic [ref=e105]:
+            - paragraph [ref=e106]: Our company
+            - list [ref=e107]:
+              - listitem [ref=e108]:
+                - link "Delivery" [ref=e109] [cursor=pointer]:
+                  - /url: http://localhost:8081/content/1-delivery
+              - listitem [ref=e110]:
+                - link "Legal Notice" [ref=e111] [cursor=pointer]:
+                  - /url: http://localhost:8081/content/2-legal-notice
+              - listitem [ref=e112]:
+                - link "Terms and conditions of use" [ref=e113] [cursor=pointer]:
+                  - /url: http://localhost:8081/content/3-terms-and-conditions-of-use
+              - listitem [ref=e114]:
+                - link "About us" [ref=e115] [cursor=pointer]:
+                  - /url: http://localhost:8081/content/4-about-us
+              - listitem [ref=e116]:
+                - link "Secure payment" [ref=e117] [cursor=pointer]:
+                  - /url: http://localhost:8081/content/5-secure-payment
+              - listitem [ref=e118]:
+                - link "Contact us" [ref=e119] [cursor=pointer]:
+                  - /url: http://localhost:8081/contact-us
+              - listitem [ref=e120]:
+                - link "Sitemap" [ref=e121] [cursor=pointer]:
+                  - /url: http://localhost:8081/sitemap
+              - listitem [ref=e122]:
+                - link "Stores" [ref=e123] [cursor=pointer]:
+                  - /url: http://localhost:8081/stores
+        - generic [ref=e124]:
+          - paragraph [ref=e125]:
+            - link "Your account" [ref=e126] [cursor=pointer]:
+              - /url: http://localhost:8081/my-account
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "Order tracking" [ref=e129] [cursor=pointer]:
+                - /url: http://localhost:8081/guest-tracking
+            - listitem [ref=e130]:
+              - link "Sign in" [ref=e131] [cursor=pointer]:
+                - /url: http://localhost:8081/my-account
+            - listitem [ref=e132]:
+              - link "Create account" [ref=e133] [cursor=pointer]:
+                - /url: http://localhost:8081/registration
+            - listitem [ref=e134]:
+              - link "My alerts" [ref=e135] [cursor=pointer]:
+                - /url: //localhost:8081/module/ps_emailalerts/account
+        - generic [ref=e136]:
+          - paragraph [ref=e137]: Store information
+          - generic [ref=e138]:
+            - text: PrestaShop
+            - text: United Kingdom
+            - text: "Email us:"
+            - link "admin@example.com" [ref=e139] [cursor=pointer]:
+              - /url: mailto:admin@example.com
+        - generic:
+          - paragraph
+      - paragraph [ref=e142]:
+        - link "© 2026 - Ecommerce software by PrestaShop™" [ref=e143] [cursor=pointer]:
+          - /url: https://www.prestashop-project.org/
+```

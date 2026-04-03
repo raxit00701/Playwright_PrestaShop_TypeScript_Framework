@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:9090/","buildOrder":25,"buildName":"PrestaShop_Playwright_typescript #25","buildUrl":"http://localhost:9090/job/PrestaShop_Playwright_typescript/25/","reportName":"AllureReport","reportUrl":"http://localhost:9090/job/PrestaShop_Playwright_typescript/25/allure"}]
