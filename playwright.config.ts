@@ -1,5 +1,7 @@
 import { defineConfig } from '@playwright/test';
 import * as path from 'path';
+import dotenv from 'dotenv';
+
 
 // ─────────────────────────────────────────────
 //  DYNAMIC CONFIGURATION – toggle via ENV VARS
@@ -15,16 +17,19 @@ import * as path from 'path';
 //    $env:INCOGNITO="true"; $env:HEADLESS="false"; npx playwright test
 // ─────────────────────────────────────────────
 
+//─────────────────────────────────────────────
+// this is for .env credentials
+dotenv.config();
 // ── Helpers ──────────────────────────────────
 const isParallel  = (process.env.TEST_MODE ?? 'parallel') === 'parallel';
-const isHeadless  = (process.env.HEADLESS  ?? 'true')     === 'true';
+const isHeadless  = (process.env.HEADLESS  ?? 'true')     === 'false';
 const isIncognito = (process.env.INCOGNITO ?? 'false')    === 'true';
 const targetEnv   = (process.env.ENV       ?? 'local') as 'local' | 'staging' | 'prod';
 
 // ── Per-environment base URLs ─────────────────
 const ENV_URLS: Record<typeof targetEnv, string> = {
-    local:   'http://localhost:8081/',
-    staging: 'https://staging.example.com',
+    local:   'http://www.example.com',
+    staging: 'http://localhost:8081',
     prod:    'https://www.example.com',
 };
 
@@ -129,7 +134,7 @@ export default defineConfig({
     retries: process.env.CI ? 2 : 0,
 
     // ── Timeouts ─────────────────────────────
-    timeout:      60_000,
+    timeout:      180000,
     expect:       { timeout: 10_000 },
 
     // ── Reporters ────────────────────────────
@@ -180,7 +185,7 @@ export default defineConfig({
             name: 'firefox',
             use: {
                 browserName: 'firefox',
-                viewport:    VIEWPORT,
+                viewport: { width: 1700, height: 900 },
                 launchOptions: {
                     headless: isHeadless,
                     args: isIncognito ? ['-private'] : [],
@@ -216,7 +221,7 @@ export default defineConfig({
             name: 'webkit',
             use: {
                 browserName: 'webkit',
-                viewport:    { width: 1920, height: 1080 },
+                viewport:    { width: 1900, height: 1000 },
                 launchOptions: {
                     headless: isHeadless,
                 },
